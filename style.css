@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,7 +16,14 @@ header {
 
 header a {
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
+
+header a:visited {
+    color: white;
+}
+
 #header-mario {
     width: 70px;
 }
@@ -28,7 +35,6 @@ header a {
     height: 100vh;
     align-items: center;
     padding: 100px;
-    height: 100vh;
 }
 
 #corpo-site {
@@ -42,19 +48,24 @@ header a {
 #botao-contato {
     background-color: #c51111;
     color: white;
+
     width: 200px;
     height: 50px;
+
     border: none;
     border-radius: 3px;
+
     text-transform: uppercase;
     font-weight: bold;
+
     cursor: pointer;
+
     margin-top: 30px;
 }
 
 #mario-luigi {
     height: 350px;
-    
+
 }
 
 #video-fundo {
@@ -62,12 +73,14 @@ header a {
     top: 0;
     z-index: -1;
 }
+
 video {
-    width: 100vw;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 #mascara-video {
-    background: linear-gradient(109deg,rgba(10, 12, 16, 0.99) 15%,rgba(10, 12, 16, 0.7) 50%,rgba(10, 12, 16, 0.99) 85%);
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
     width: 100%;
     height: 100%;
     top: 0;
@@ -78,4 +91,100 @@ p {
     color: white;
     font-size: 20px;
     font-family: "Mukta", sans-serif;
+    text-align: justify;
+}
+
+header a:hover {
+    color: #c51111;
+    font-size: 25px;
+    transition: 0.5s ease-in-out;
+}
+
+.container-whatsapp {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+
+}
+
+.link-whatsapp img {
+    width: 60px;
+}
+
+.link-whatsapp {
+    cursor: pointer;
+}
+
+form {
+    background-color: white;
+
+    position: fixed;
+    top: 35%;
+    left: -340px;
+
+    /* 
+    Posição Final
+
+    left: 50%;
+    transform: translateX(-50%); 
+    */
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 20px;
+    border-radius: 6px;
+    width: 350px;
+
+    z-index: 1;
+
+    transition: 0.5s left ease-in-out;
+}
+
+
+form input {
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline-color: #18d80f;
+}
+
+form textarea {
+    height: 100px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline-color: #18d80f;
+}
+
+.button-form {
+    background-color: #c51111;
+    color: white;
+
+    width: 200px;
+    height: 50px;
+
+    border: none;
+    border-radius: 3px;
+
+    text-transform: uppercase;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 30px;
+}
+
+.form-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+
+    visibility: hidden;
+
+    transition: 0.5s visibility ease-in-out;
 }
