@@ -7,18 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site do Mário</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./img/logo-header.png">
 
 </head>
 
-<!--  ------------------------Corpo do Site----------------------------- -->
-
 <body>
-
+    
     <header>
         <img id="header-mario" src="./img/logo-header.png" alt="Header-mario">
         <a class="texto-header" id="home"> Home </a>
         <a class="texto-header" id="fale-conosco"> Fale Conosco </a>
-        <a class="texto-header" id="serviços"> Nossos Serviços </a>
+        <a class="texto-header" href="servicos.html" id="serviços"> Nossos Serviços </a>
     </header>
 
     <div id="principal">
@@ -28,8 +27,8 @@
 
             <p class="texto-paragrafo" id="paragrafo-encanador"> 🔧 Encanadores Mario & Luigi - Resolvendo Seus
                 Problemas Hidráulicos Com Estilo! 🔧 </p>
-                
-                <br>
+
+            <br>
 
             <p class="texto-paragrafo" id="introdução"> Você já se encontrou em uma situação de emergência com
                 encanamento? Vazamentos inesperados, canos
@@ -37,7 +36,7 @@
                 Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
             </p>
 
-            <button id="botao-contato" onclick="showForm()"> Entre em Contato </button>
+            <button onclick="mostrarForm()" id="botao-contato"> Entre em Contato </button>
         </div>
 
         <div id="div-mario-luigi">
@@ -49,6 +48,29 @@
         <div id="mascara-video"></div>
     </div>
 
+    <div class="container-whatsapp">
+        <a class="link-whatsapp" href="https://w.app/fq0ae2">
+            <img src="img/whatsapp.png" alt="whatsapp-logo">
+        </a>
+    </div>
+
+    <form class="form" action="https://formcarry.com/s/o0-GBdANxJ2" method="POST" enctype="multipart/form-data">
+        <input type="text" name="nome" placeholder="Digite seu nome">
+
+        <input type="email" name="e-mail" placeholder="Digite seu e-mail">
+
+        <textarea name="problema" placeholder="Digite seu problema aqui..."></textarea>
+
+        <button type="submit" class="button-form"> Pedir Orçamento </button>
+    </form>
+
+
+    <div onclick="esconderForm()" class="form-mask">
+
+
+    </div>
+
 </body>
+<script src="script.js"></script>
 
 </html>
